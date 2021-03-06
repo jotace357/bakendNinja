@@ -1,7 +1,20 @@
 package udemy.model;
 
+//import javax.validation.constraints.*;
+
+
 public class Person {
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+
+	//@NotNull
+	//@Size(min=2, max=6)
 	private String name;
+	
+	//@NotNull
+	//@Min(18)
 	private int age;
 
 	public Person(String name, int age) {
